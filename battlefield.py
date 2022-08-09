@@ -47,5 +47,5 @@ class Battlefield:
         elif Dinosaur == "0":
                 print(f'You have claimed the victory!')
 
-    display_winner()
+    result = display_winner()
     print(display_winner)
