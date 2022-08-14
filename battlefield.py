@@ -19,8 +19,9 @@ class Battlefield:
         
 
     def battle_phase(self):
-        self.dinosaur.attack(self.robot)
-        self.robot.attack(self.dinosaur)
+        while self.robot.health > 0 and self.dinosaur.health >0:
+            self.dinosaur.attack(self.robot)
+            self.robot.attack(self.dinosaur)
       
        
             
@@ -36,12 +37,11 @@ class Battlefield:
     #         elif self.dinosaur == "0":
     #             print(f'You have claimed the victory!')
 
-    def display_winner():
-        battle_phase = False
-        if Robot == "0":
-            print(f'You have claimed the victory!') 
-        elif Dinosaur == "0":
-                print(f'You have claimed the victory!')
+    def display_winner(self):
+        if self.robot.healt <= 0:
+            print(f'{self.dinosaur.name} has claimed the victory!') 
+        elif self.dinosaur.health <= 0:
+                print(f'{self.robot.name} has claimed the victory!')
 
     result = display_winner()
     print(display_winner)
