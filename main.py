@@ -1,6 +1,5 @@
 
 from battlefield import Battlefield
-# should i define the run game and/or the battlefield?
 
 battlefield = Battlefield("battle_phase", "display_winner")
 
