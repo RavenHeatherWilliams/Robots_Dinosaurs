@@ -7,7 +7,7 @@ class Battlefield:
         self.robot = Robot("Humanoid")
 
     def run_game(self):
-        self.display_welcome("")
+        self.display_welcome()
         self.battle()
         # self.display_winner()
 
