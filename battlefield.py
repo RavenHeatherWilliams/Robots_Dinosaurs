@@ -26,7 +26,7 @@ class Battlefield:
               
     
     def display_winner(self):
-        if self.robot.healt <= 0:
+        if self.robot.health <= 0:
             print(f'{self.dinosaur.name} has claimed the victory!') 
         elif self.dinosaur.health <= 0:
                 print(f'{self.robot.name} has claimed the victory!')
