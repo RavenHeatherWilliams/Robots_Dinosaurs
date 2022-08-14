@@ -1,10 +1,8 @@
 
 from battlefield import Battlefield
 
-battlefield = Battlefield("battle_phase", "display_winner")
+battlefield = Battlefield()
 
-run_game = Battlefield.run_game
-
-print(run_game)
+battlefield.run_game()
 
 
