@@ -10,5 +10,5 @@ class Robot:
 
     def attack(self,dinosaur):
         self.health -= self.weapon.attack_power
-        print(f'{self.dinosaur} was attacked by {self.name} and did {self.attack_power} massive damage leaving the dinosaur with {dinosaur.health} health')
+        print(f'{dinosaur.name} was attacked by {self.name} and did {self.weapon.attack_power} massive damage leaving the dinosaur with {dinosaur.health} health')
   
