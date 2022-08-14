@@ -9,6 +9,6 @@ class Robot:
         self.weapon = Weapon("laser")
 
     def attack(self,dinosaur):
-        self.health -= self.attack 
+        self.health -= self.weapon.attack_power
         print(f'{self.dinosaur} was attacked by {self.name} and did {self.attack_power} massive damage leaving the dinosaur with {dinosaur.health} health')
   
